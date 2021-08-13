@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+<body>
+    <!-- <button onclick ="goiAlert()">Click me</button> -->
+
+    <!-- <h1 id="hd">Bai 7</h1>
+    <h1 class="hd class">my heading</h1> -->
+
+    <h1 id="hd">Menu</h1>
+
+    <ul id="list">
+        <li>sua tuoi</li>
+        <li>cafe</li>
+        <li>tra chanh</li>
+    </ul>
+
+    <!-- bai tap -->
+    <!-- <a id="hd" href="https://www.google.com">
+        click open google
+    </a> -->
+
+
+
+
+
+</body>
+<script>
+// const input = prompt('INPUT');
+// alert (input);
+// console.log('Hello')
+
+// const input2 = prompt('INPUT');
+// alert (input2);
+
+// const input3 = prompt('INPUT');
+// alert (input3);
+
+// inputAlert();
+// inputAlert();
+// inputAlert();
+// function inputAlert() {
+//     const input = prompt("nhap input");
+//     alert(input);
+// }
+
+//in so tu 1 den 10 3 lan
+
+// function inSo() {
+//     for (let i=1; i<11; i++) {
+//     console.log(i); }
+// }
+// inSo();
+// inSo();
+// inSo();
+
+//kiem tra so chan le
+// function checkSo(x) {
+//     if (x % 2 ===0) {
+//         alert('So chan');
+//     } else {
+//         alert('So le');
+//     }
+// }
+// checkSo(5);
+// checkSo(10);
+// let x = 23;
+// checkSo(x);
+
+//tinh tong 2 so
+// function tinhTong(x,y) {
+//     let sum = x + y;
+//     alert('Tong cua x va y la: ' + sum);
+// }
+// tinhTong(5,10);
+// let x = 17; 
+// let y = 3;
+// tinhTong(x,y);
+
+
+//truyền vào 3 số abc, check a = b+c, gọi function với ví dụ
+// function checkSo(a, b, c) {
+//     if (c + b ===a){
+//         alert('a bằng tổng b và c');
+//     } else {
+//         alert('a không bằng tổng b và c');
+// }
+// }
+// let a = Number(prompt('Nhap so a'));
+// let b = Number(prompt('Nhap so b'));
+// let c = Number(prompt('Nhap so c'));
+
+// checkSo(a, b, c);
+
+
+//truyền function vào html
+// function goiAlert() {
+//     alert('Hello');
+// }
+
+
+// function callbackFunction() {
+//     console.log('di ngu');
+// }
+
+// function functionB(callback) {
+
+//         console.log('di choi');
+       
+//     }
+// function functionMe(callback) {
+//     console.log('da hoc bai')
+//     callback();
+// }    
+
+// setTimeout(functionB, 2000);
+
+// functionMe(callbackFunction);
+
+
+//DOM
+//read
+// let heading = document.getElementById("hd");
+// console.log(heading);
+
+// console.dir(heading);
+//update
+// heading.innerHTML = "DOM";
+
+// let resulArray = document.getElementsByClassName("hd class");
+// console.dir(resulArray);
+// resulArray[0].innerHTML = "new heading";
+
+//document.getElementsByTagName("h1");
+
+// //creat
+let ul = document.getElementById("list");
+console.log(ul.interHTML);
+
+ul.interHTML += `<li>capuchino</li>`;
+console.log(ul.interHTML);
+
+
+//bai tap: tro vao google bang html, dung js de chuyen sang facebook
+// let fb = document.getElementById("hd");
+// fb.href = "https://www.facebook.com";
+
+
+// //delete
+// fb.remove();
+
+
+//event : 
+let heading = document.getElementById('hd');
+
+function callbackFunc() {
+    heading.innerHTML = 'da click';
+}
+
+heading.addEventListener('click', callbackFunc);
+
+</script>
+</html>
